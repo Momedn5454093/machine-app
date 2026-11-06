@@ -7,18 +7,18 @@ import 'core/theming/app_colors.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await setupGetIt();
-  runApp(CustomerChurnApp(appRouter: AppRouter()));
+  runApp(RetenScopeApp(appRouter: AppRouter()));
 }
 
-class CustomerChurnApp extends StatelessWidget {
+class RetenScopeApp extends StatelessWidget {
   final AppRouter appRouter;
 
-  const CustomerChurnApp({super.key, required this.appRouter});
+  const RetenScopeApp({super.key, required this.appRouter});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Customer Churn Prediction',
+      title: 'RetenScope - Churn Prediction',
       theme: ThemeData(
         primaryColor: AppColors.primary,
         scaffoldBackgroundColor: Colors.white,

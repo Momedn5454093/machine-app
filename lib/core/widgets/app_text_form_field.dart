@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../theming/app_colors.dart';
 
 class AppTextFormField extends StatelessWidget {
@@ -35,36 +36,27 @@ class AppTextFormField extends StatelessWidget {
       controller: controller,
       decoration: InputDecoration(
         isDense: true,
-        contentPadding: contentPadding ??
+        contentPadding:
+            contentPadding ??
             const EdgeInsets.symmetric(horizontal: 20.0, vertical: 18.0),
-        focusedBorder: focusedBorder ??
+        focusedBorder:
+            focusedBorder ??
             const OutlineInputBorder(
-              borderSide: BorderSide(
-                color: AppColors.primary,
-                width: 1.3,
-              ),
+              borderSide: BorderSide(color: AppColors.primary, width: 1.3),
               borderRadius: BorderRadius.all(Radius.circular(16.0)),
             ),
-        enabledBorder: enabledBorder ??
+        enabledBorder:
+            enabledBorder ??
             const OutlineInputBorder(
-              borderSide: BorderSide(
-                color: AppColors.lighterGray,
-                width: 1.3,
-              ),
+              borderSide: BorderSide(color: AppColors.lighterGray, width: 1.3),
               borderRadius: BorderRadius.all(Radius.circular(16.0)),
             ),
         errorBorder: const OutlineInputBorder(
-          borderSide: BorderSide(
-            color: Colors.red,
-            width: 1.3,
-          ),
+          borderSide: BorderSide(color: Colors.red, width: 1.3),
           borderRadius: BorderRadius.all(Radius.circular(16.0)),
         ),
         focusedErrorBorder: const OutlineInputBorder(
-          borderSide: BorderSide(
-            color: Colors.red,
-            width: 1.3,
-          ),
+          borderSide: BorderSide(color: Colors.red, width: 1.3),
           borderRadius: BorderRadius.all(Radius.circular(16.0)),
         ),
         hintStyle: hintStyle ?? const TextStyle(color: AppColors.gray),
